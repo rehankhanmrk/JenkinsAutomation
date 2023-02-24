@@ -12,9 +12,8 @@ node {
 	stage('Test') {
 		sh 'npm test'
 	}
-	stage('startnode') {
-		sh 'npm start'
+	stage('npx') {
+		sh 'npx create-react-app node'
 	}
 	
-    
 }
