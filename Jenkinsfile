@@ -13,8 +13,8 @@ node {
 	stage('Build') {
 		sh 'npm install'
 	}
-	stage('nodestart') {
-		sh 'npm start'
+	stage('nodebuild') {
+		sh 'npm run build'
 	}
 	stage('Test') {
 		sh 'npm test'
